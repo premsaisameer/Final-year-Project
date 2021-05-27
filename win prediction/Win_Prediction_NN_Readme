@@ -1,0 +1,28 @@
+Multilayer Perceptron is constructed using Pytorch framework.
+Using nn module from the pytorch, Multilayer perceptron is constructed.
+
+It has three main functions. They are :
+    1) def forward(self, X): it calculates the forward pass of the neural network.
+    2) def fit(x, y, model, opt, loss_fn, epochs=1000):
+            It calculates the backward pass of the netwrok and updates the parameter.
+            It also calculates the loss value obtained by the of the model
+
+
+Hyper-parameters of the Multilayer perceptron
+
+Hyper-parameter :                                      number/value/function/type
+
+Number of hidden layers                                         3
+Number of hidden units in Layer 1/2/3                           10
+Activation for hidden layers                                    ReLU function
+Activation for the output layer                                 Sigmoid function
+Optimizer                                                       Adam
+Regularization                                                  L2
+Initial learning rate                                           0.001
+loss function                                                   Binary Cross Entropy
+
+The MLP classifier was a three-hidden-layered artificial neural network with ten hidden units in each layer.
+The selection for the number of layers and the number of hidden units in each layer was made experimentally.
+The activation function in the hidden layer was Rectified Linear Unit (ReLU).
+Predicting the winner of a cricket match between a home team and an away team is a bi-nary classification problem;
+hence, a sigmoid function was used as the activation function in the output layer.
